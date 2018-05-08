@@ -1,0 +1,89 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Avenir";
+}
+
+.square {
+	border-radius: 15%;
+	width: 30%;
+	background-color: purple;
+	margin: 1.66%;
+/*	gives height*/
+	padding-bottom: 30%;
+/*	packs horizontally*/
+	float: left;
+	transition: background 0.6s;
+	--webkit-transition: background 0.6s;
+	--moz-transition: background 0.6s;	
+}
+
+.animate {
+	animation: rotate 10s infinite linear; 
+}
+
+@keyframes rotate{
+  0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }  
+}
+
+#container {
+	/*Puts in center*/
+	margin: 20px auto;
+/*	constrains the width*/
+	max-width: 600px;
+}
+
+h1 {
+	line-height: 1.1;
+	color: white;
+	text-align: center;
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	/*add padding top and bottom*/
+	padding: 20px 0;
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+#stripe {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+}
+
+.selected {
+	background-color: steelblue;
+	color: white;
+}
+
+button {
+	border: none;
+	background-color: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	--webkit-transition: all 0.3s;
+	--moz-transition: all 0.3s;
+	outline: none;
+	/*Removes the button outline in Chrome*/
+}
+
+button:hover {
+	background-color: steelblue;
+	color: white;
+}
+
