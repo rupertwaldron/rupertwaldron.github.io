@@ -1,0 +1,9 @@
+* {box-sizing:border-box}
+
+.myVideo {
+  display: block;
+  width: 1800px;
+  height: auto;
+  margin-left: auto;
+  margin-right:auto;
+}
